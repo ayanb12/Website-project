@@ -1,20 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	<link rel="stylesheet" href="css/style.css">
+    <title>Frontend Mentor | Insure landing page</title>
+  </head>
 
-	<title>Frontend Mentor | Insure landing page</title>
+  <body>
+    <div class="container">
+      <nav class="main-nav">
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <ul class="nav-items">
+          <li><a href="#">HOW WE WORK</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">ACCOUNT</a></li>
+          <li><a href="#" class="btn-primary">VIEW PLANS</a></li>
+        </ul>
+      </nav>
+    </div>
 
-</head>
+    <!-- Showcase Section -->
+    <header class="showcase bg-dark">
+      <div class="container wrapper">
+        <div class="first-content">
+          <div class="line-primary"></div>
+          <h1 class="heading-primary">Humanizing your insurance.</h1>
+          <p class="para-primary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+            laudantium quidem quibusdam dolorum corrupti accusamus voluptatum
+            tempore, perferendis nulla fugit! Quam itaque ullam voluptatum
+            error.
+          </p>
+          <a href="#" class="btn-secondary next-btn">VIEW PLANS</a>
+        </div>
 
-<body>
+        <div class="second-content">
+          <img
+            src="./images/image-intro-desktop.jpg"
+            alt="image"
+            class="showcase-img"
+          />
+        </div>
+      </div>
+    </header>
 
-</body>
+    <!-- Different Section -->
+    <section class="different">
+      <div class="container">
+        <div class="line-secondary"></div>
+        <h1 class="heading-secondary">We're different</h1>
+        <div class="card-items">
+          <div class="card">
+            <img src="./images/icon-snappy-process.svg" alt="card1" />
+            <h2 class="heading-secondary">Snappy Process</h2>
+            <p class="para-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              vel, ad enim id minus quasi.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/icon-affordable-prices.svg" alt="card2" />
+            <h2 class="heading-secondary">Affordable Prices</h2>
+            <p class="para-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              vel, ad enim id minus quasi.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/icon-people-first.svg" alt="card3" />
+            <h2 class="heading-secondary">People First</h2>
+            <p class="para-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              vel, ad enim id minus quasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Find Out More -- Section -->
+
+    <section class="find-out">
+      <div class="container">
+        <div class="bg-dark wrapper">
+          <h1 class="heading-primary">Find out more about how we work</h1>
+          <a href="#" class="btn-secondary">HOW WE WORK</a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
