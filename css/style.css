@@ -353,7 +353,6 @@ ul.social-links li a:hover img {
 
 /* Footer Section */
 .main-footer {
-  height: 280px;
   background: var(--very-light-gray);
 }
 
@@ -362,4 +361,32 @@ ul.social-links li a:hover img {
   height: 0.06em;
   background: var(--grayish-blue);
   opacity: 0.5;
+}
+
+.main-footer .footer-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  padding: 3.6rem 0;
+}
+
+.main-footer .footer-cards .footer-card-item .footer-heading {
+  font-family: var(--font-karla);
+  font-size: 16px;
+  margin-bottom: 26px;
+  color: var(--grayish-blue);
+  letter-spacing: 1.5px;
+}
+
+.main-footer .footer-cards .footer-card-item ul li a {
+  font-size: 12px;
+  font-family: var(--font-karla);
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.main-footer .footer-cards .footer-card-item ul li a:hover {
+  color: var(--grayish-blue);
 }
