@@ -128,6 +128,14 @@ ul li {
   background-color: var(--dark-violet);
 }
 
+.hamburger-icon {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  z-index: 1;
+  display: none;
+}
+
 /* Navbar */
 .main-nav {
   width: 100%;
@@ -239,9 +247,8 @@ ul li {
 /* Different Section */
 .different {
   width: 100%;
-  height: 600px;
   padding: 2.5rem 0;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 .different .heading-secondary {
@@ -389,4 +396,201 @@ ul.social-links li a:hover img {
 
 .main-footer .footer-cards .footer-card-item ul li a:hover {
   color: var(--grayish-blue);
+}
+
+@media (max-width: 500px) {
+  .hamburger-icon {
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    z-index: 1;
+    display: block;
+  }
+
+  .main-nav ul.nav-items {
+    display: none;
+  }
+
+  .main-nav {
+    padding: 1rem 0;
+  }
+
+  .showcase {
+    position: relative;
+    top: 400px;
+    width: 100%;
+    height: 520px;
+    z-index: 1;
+    margin-bottom: 450px;
+  }
+
+  .showcase::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: top left;
+    top: -220px;
+    left: 0;
+  }
+
+  .showcase::after {
+    content: "";
+    display: none;
+  }
+
+  .showcase .second-content {
+    position: absolute;
+    top: -510px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .showcase .second-content img {
+    width: 100%;
+    height: 445px;
+  }
+
+  .showcase .first-content .line-primary {
+    display: none;
+  }
+
+  .showcase .first-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-right: -45px;
+    margin-top: -50px;
+  }
+
+  .showcase .first-content h1.heading-primary {
+    font-family: var(--font-DM-serif);
+    font-size: 2.6rem;
+    color: var(--very-light-gray);
+    font-weight: 400;
+    padding: 0 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .showcase .first-content .para-primary {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .different {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+    z-index: 1;
+  }
+
+  .different .line-secondary {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .different .container h1.heading-secondary {
+    text-align: center;
+    padding: 0;
+    font-size: 45px;
+  }
+
+  .different .card-items {
+    grid-template-columns: 1fr;
+  }
+
+  .different .card-items .card {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .different .card-items .card > h2.heading-secondary {
+    padding: 0;
+    font-size: 2.2rem;
+  }
+
+  .different .card-items .card > p.para-secondary {
+    font-size: 15px;
+  }
+
+  .find-out {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .find-out .wrapper::after {
+    content: "";
+    background: url(../images/bg-pattern-intro-right-desktop.svg) no-repeat;
+    background-position: top right;
+    position: absolute;
+    width: 100%;
+    height: 124%;
+    top: -180px;
+  }
+
+  .find-out .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .find-out .wrapper div:first-child {
+    width: 100%;
+  }
+
+  .find-out .wrapper div:first-child h1.heading-primary {
+    font-family: var(--font-DM-serif);
+    font-size: 1.9rem;
+    color: var(--very-light-gray);
+    font-weight: 400;
+    padding: 0;
+    line-height: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .find-out .wrapper div:last-child {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .find-out .wrapper div a.btn-secondary {
+    display: inline-block;
+    padding: 6px 2px;
+    border: 1px solid rgb(252, 252, 252);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #fff;
+    width: 150px;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    font-family: var(--font-karla);
+    font-weight: 700;
+    z-index: 1;
+  }
+
+  .main-footer .footer-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
